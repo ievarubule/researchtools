@@ -1,29 +1,23 @@
-# Ieva Rubule — public research showroom
+# Ieva Rubule — Research
 
-Institutional-grade, AI-assisted investment research — **published outputs only**.
-Research and education, not investment advice.
+Independent, EU-lens investment research that shows its working — filings-sourced
+figures, honest downside, probabilities instead of price targets. Research and
+education, **not investment advice** — see [DISCLAIMER.md](DISCLAIMER.md).
+More at [ievarubule.ai](https://ievarubule.ai).
 
-I'm an EU-based investor with 13+ years in institutional investing, building an
-AI-powered research system and publishing what it produces: company notes with
-honest downside, probability-based valuation, and forecasts logged in advance so
-they can be scored later. More at **[ievarubule.ai](https://ievarubule.ai)**.
+## Stocks
 
-## What's here
+- **Novo Nordisk** — July 2026 — *is the obesity leader a bargain, or is Lilly
+  simply winning?* → [reports/stocks/novo-nordisk_2026-07.pdf](reports/stocks/novo-nordisk_2026-07.pdf)
 
-| Folder | Contents |
-|---|---|
-| `reports/` | Externally published research notes (PDF + HTML) |
-| `charts/` | The charts those notes embed, each with its CSV data twin for auditability |
-| `essays/` | Published practitioner pieces (EU AI Act field guide for the investment field) |
-| `methodology/` | How the research is done — descriptive, coming soon |
-| `track-record/` | Aggregate forecast-calibration summary — coming soon |
-| `template/` | A reusable report template — coming soon |
+## ETFs
 
-## What's NOT here — by design
+*Coming.*
 
-This repo is the showroom, not the engine. The research system itself (skills,
-prompts, quantitative code, data rooms, working notes, anything resembling a live
-idea or position) stays private. Everything published here is a finished,
-sanitised artefact carrying the full public disclaimer — see `DISCLAIMER.md`.
+## Funds
 
-**Every report sets no price target and makes no buy/sell/hold recommendation.**
+*Coming.*
+
+## Macro
+
+*Coming.*

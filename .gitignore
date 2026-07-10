@@ -1,6 +1,6 @@
-# ═══ Default-DENY gitignore for the public showroom ═══
-# Everything is ignored unless explicitly allowed below. A stray file dragged
-# into this folder can NOT be committed by accident — it must be whitelisted here.
+# ═══ Default-DENY gitignore for the public research repo ═══
+# Everything is ignored unless explicitly allowed. Only external PDFs under
+# reports/ (plus the index files) can ever be committed.
 
 # 1) deny everything
 *
@@ -11,24 +11,16 @@
 !DISCLAIMER.md
 !PUBLISH.md
 
-# 3) allow the six content folders (dir must be un-ignored before its contents)
+# 3) allow reports/ — PDFs and .gitkeep only
 !reports/
-!reports/**
-!charts/
-!charts/**
-!essays/
-!essays/**
-!methodology/
-!methodology/**
-!track-record/
-!track-record/**
-!template/
-!template/**
+!reports/**/
+!reports/**/*.pdf
+!reports/**/.gitkeep
 
-# 4) re-deny dangerous shapes even inside allowed folders (belt and braces)
+# 4) re-deny dangerous shapes everywhere (belt and braces)
 **/*_internal.*
 **/*.py
-**/SKILL.md
+**/*.md.bak
 **/.env*
 **/*.key
 **/*apikey*

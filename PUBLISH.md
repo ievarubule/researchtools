@@ -1,46 +1,30 @@
-# PUBLISH.md — how a new report gets into the showroom
+# PUBLISH.md — adding a note to this repo
 
-> **THE HARD RULE (read every time):** external artefacts only — the engine
-> never, live ideas never, holdings never. The governing law is the private
-> research repo's boundary document. If the sanitisation checklist or the
-> secret/engine scan finds ANYTHING, stop — nothing gets pushed.
+> **THE HARD RULE:** external PDFs only — never the engine, never live ideas,
+> never holdings. The governing law is the private research repo's boundary
+> document. Any doubt, any scan hit: stop, nothing gets pushed.
 
-## Publishing a new note (report #2, #3, #10 — same five steps every time)
+## To add a note
 
-1. **Copy, never move** (the private repo stays the source of truth):
-   - the note's `*_external.pdf` and `*_external.html` → `reports/`
-   - the charts that note embeds (PNG + CSV twin) → `charts/`
-   - Never copy an internal-mode render, a working draft, or source material.
-2. **Run the publish checklist** on every new file (full version in the private
-   boundary doc):
-   - external-rendered (or already-published essay)? — internal-mode stops here
-   - carries the canonical public disclaimer + holdings disclosure?
-   - names or implies NO live idea, pending trade, or real holding?
-   - exposes NO runnable engine (skill, prompt, quant code)?
-3. **Run the secret + engine scan** over the whole public folder — key shapes,
-   engine paths, internal markers (the exact pattern list lives in the private
-   boundary doc, deliberately not reproduced here). **Zero real hits or no push.**
-4. **Commit and push:**
-   ```
+1. Copy (never move) the note's **external PDF** from the private repo into the
+   right folder, named `<name>_<YYYY-MM>.pdf`:
+   - `reports/stocks/` · `reports/etfs/` · `reports/funds/` · `reports/macro/`
+2. Add one line to the README index under the matching heading:
+   `**<Company>** — <Month Year> — *<the note's one-line question>* → <path>`
+3. Sanity-check: it is the *external* render, it carries the public disclaimer,
+   and the scan (key shapes, engine paths, internal markers — full list in the
+   private boundary doc) is clean.
+4. ```
    git add -A
-   git commit -m "Add <company> note"
+   git commit -m "Add <name> note"
    git push
    ```
-5. **Check the repo page** — the new PDF renders, nothing unexpected appears.
 
-## The one line to paste to Claude next time
+## The one line to paste to Claude
 
 > Publish the new external note for <TICKER> to the public repo — run the
 > boundary checklist first.
 
-Claude will do steps 1–4 and show you the checklist table and scan result
-before anything is pushed.
-
-## Notes
-
-- The `.gitignore` here is **default-deny**: a stray file cannot be committed
-  unless whitelisted. Don't weaken it.
-- `methodology/`, `track-record/`, `template/` are filled deliberately with the
-  author, never auto-generated from private files.
-- One-way flow: nothing in this repo ever feeds back into the private research
-  system.
+Notes: the `.gitignore` is default-deny (only PDFs under `reports/` plus the
+index files can be committed). One-way flow — nothing here feeds back into the
+private system.
