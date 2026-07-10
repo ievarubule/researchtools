@@ -1,0 +1,36 @@
+# ═══ Default-DENY gitignore for the public showroom ═══
+# Everything is ignored unless explicitly allowed below. A stray file dragged
+# into this folder can NOT be committed by accident — it must be whitelisted here.
+
+# 1) deny everything
+*
+
+# 2) allow the repo's own files
+!.gitignore
+!README.md
+!DISCLAIMER.md
+!PUBLISH.md
+
+# 3) allow the six content folders (dir must be un-ignored before its contents)
+!reports/
+!reports/**
+!charts/
+!charts/**
+!essays/
+!essays/**
+!methodology/
+!methodology/**
+!track-record/
+!track-record/**
+!template/
+!template/**
+
+# 4) re-deny dangerous shapes even inside allowed folders (belt and braces)
+**/*_internal.*
+**/*.py
+**/SKILL.md
+**/.env*
+**/*.key
+**/*apikey*
+**/*secret*
+**/*credentials*
