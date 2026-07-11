@@ -1,7 +1,7 @@
 # PUBLISH.md — adding to this repo
 
 > **THE HARD RULE:** share the useful, never the engine. Reports: external PDFs
-> only. Toolkit: Chair-curated items only — regulatory helpers, evals of shared
+> only. Toolkit: author-curated items only — regulatory helpers, evals of shared
 > skills, tips. Valuation / DD / base-rate / screening / fund-analysis skills:
 > **never.** Live ideas and holdings: **never.** The governing law is the
 > private repo's boundary document. Any doubt, any scan hit: stop.
@@ -16,8 +16,8 @@
 
 ## Shelf 2 — adding a toolkit item (`toolkit/`)
 
-1. **Chair picks it.** Nothing lands here by default; each item is an explicit
-   decision recorded against the boundary doc's toolkit rule.
+1. **The author picks it.** Nothing lands here by default; each item is an
+   explicit decision recorded against the boundary doc's toolkit rule.
 2. **Make it self-contained.** Strip every reference to the private system —
    its folders, other skills, internal paths. If it can't stand alone without
    dragging engine context, it wasn't shareable.
