@@ -1,6 +1,6 @@
-# ═══ Default-DENY gitignore for the public research repo ═══
-# Everything is ignored unless explicitly allowed. Only external PDFs under
-# reports/ (plus the index files) can ever be committed.
+# ═══ Default-DENY gitignore for the public repo ═══
+# Everything is ignored unless explicitly allowed. Reports: PDFs only.
+# Toolkit: markdown + LICENSE only. A stray file cannot be committed by accident.
 
 # 1) deny everything
 *
@@ -17,10 +17,15 @@
 !reports/**/*.pdf
 !reports/**/.gitkeep
 
-# 4) re-deny dangerous shapes everywhere (belt and braces)
+# 4) allow toolkit/ — markdown and the licence only
+!toolkit/
+!toolkit/**/
+!toolkit/**/*.md
+!toolkit/LICENSE
+
+# 5) re-deny dangerous shapes everywhere (belt and braces)
 **/*_internal.*
 **/*.py
-**/*.md.bak
 **/.env*
 **/*.key
 **/*apikey*
