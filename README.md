@@ -13,7 +13,9 @@ said, when it said it.
 ### Stocks
 
 - **Novo Nordisk** — July 2026 — *is the obesity leader a bargain, or is Lilly
-  simply winning?* → [reports/stocks/novo-nordisk_2026-07.pdf](reports/stocks/novo-nordisk_2026-07.pdf)
+  simply winning?*
+  [Full research note (16pp)](reports/stocks/novo-nordisk_2026-07.pdf) ·
+  [Summary (8pp)](reports/stocks/novo-nordisk-summary_2026-07.pdf)
 
 ### ETFs · Funds · Macro
 
