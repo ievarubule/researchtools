@@ -1,0 +1,7 @@
+,Case A — cash flow normalises,Case B — cash flow stays as-is
+p10,126.9,38.44
+p25,231.59,70.15
+p50,332.07,100.59
+p75,456.79,138.37
+p90,583.08,176.62
+P(fair>price),0.52,0.0

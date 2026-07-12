@@ -10,12 +10,18 @@ The time-stamped public archive of published notes. Every note is the external,
 disclaimer-carrying version; the git history is the record that it said what it
 said, when it said it.
 
+**How to use a report folder:** read the summary first, then the full note;
+`figures/` holds every chart with its CSV data twin, so any number in any
+picture can be checked or redrawn. Each folder's README states the one-sentence
+thesis and the as-of date. The polished reading experience lives on
+[ievarubule.ai](https://ievarubule.ai); this repo is the transparent archive.
+
 ### Stocks
 
-- **Novo Nordisk** — July 2026 — *is the obesity leader a bargain, or is Lilly
-  simply winning?*
-  [Full research note (16pp)](reports/stocks/novo-nordisk_2026-07.pdf) ·
-  [Summary (8pp)](reports/stocks/novo-nordisk-summary_2026-07.pdf)
+- **Novo Nordisk** — July 2026 — *what is the de-rated price assuming — and is
+  Lilly simply ahead?*
+  → [reports/stocks/novo-nordisk_2026-07/](reports/stocks/novo-nordisk_2026-07/)
+  (full note 16pp · summary 8pp · figures + data)
 
 ### ETFs · Funds · Macro
 

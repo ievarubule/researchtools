@@ -11,10 +11,13 @@
 !DISCLAIMER.md
 !PUBLISH.md
 
-# 3) allow reports/ — PDFs and .gitkeep only
+# 3) allow reports/ — PDFs, figures (png+csv), per-report READMEs, .gitkeep
 !reports/
 !reports/**/
 !reports/**/*.pdf
+!reports/**/*.png
+!reports/**/*.csv
+!reports/**/README.md
 !reports/**/.gitkeep
 
 # 4) allow toolkit/ — markdown and the licence only
