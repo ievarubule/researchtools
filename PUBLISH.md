@@ -8,10 +8,17 @@
 
 ## Shelf 1 — adding a research note (`reports/`)
 
-1. Copy (never move) the note's **external PDF** into the right folder, named
-   `<name>_<YYYY-MM>.pdf`: `stocks/` · `etfs/` · `funds/` · `macro/`.
-2. Add one line to the README index under the matching heading.
-3. Sanity-check: external render, public disclaimer visible, scan clean.
+1. Create the per-report folder `reports/<class>/<name>_<YYYY-MM>/` and copy
+   (never move) into it: the external PDF(s)
+   (`<name>_<YYYY-MM>_full-note.pdf`, `_summary.pdf`), a `figures/` folder
+   with the note's charts (PNG + CSV data twins), and a mini-README
+   (one-sentence thesis, contents, how to read, as-of date, link to the
+   website version).
+2. Add one line to the root README index under the matching heading, linking
+   the folder.
+3. Sanity-check: external renders only, public disclaimer inside, scan clean.
+   Full pre-publish gate: the private repo's
+   `05_Templates/report_publish_checklist.md`.
 4. `git add -A && git commit -m "Add <name> note" && git push`
 
 ## Shelf 2 — adding a toolkit item (`toolkit/`)
